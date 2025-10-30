@@ -19,6 +19,7 @@ class Settings(BaseSettings):
 
     REDIS_HOST: str
     REDIS_PORT: int
+    REDIS_PASSWORD: str
 
     SECRET_KEY: str
     ALGORITHM: str
