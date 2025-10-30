@@ -31,7 +31,7 @@ async def get_sample_images():
                 "id": sample.id,
                 "filename": sample.filename,
                 "image_url": (
-                    f"http://localhost:8000{sample.image_url}"
+                    f"http://imagetaganalyzer-backend-production.up.railway.app:8000{sample.image_url}"
                     if not sample.image_url.startswith("http")
                     else sample.image_url
                 ),
