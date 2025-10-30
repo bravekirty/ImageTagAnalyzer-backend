@@ -11,8 +11,7 @@ app = FastAPI(title="Image Tagging API", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
+        "https://imagetaganalyzer-frontend-production.up.railway.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
