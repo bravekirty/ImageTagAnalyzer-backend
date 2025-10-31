@@ -20,7 +20,7 @@ router = APIRouter(
 )
 
 
-@router.post("/")
+@router.post("/upload")
 async def upload_image(
     file: UploadFile = File(..., description="Image file to process"),
     confidence_threshold: float = 30.0,
