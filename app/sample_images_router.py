@@ -30,11 +30,7 @@ async def get_sample_images():
             {
                 "id": sample.id,
                 "filename": sample.filename,
-                "image_url": (
-                    f"http://imagetaganalyzer-backend-production.up.railway.app{sample.image_url}"
-                    if not sample.image_url.startswith("http")
-                    else sample.image_url
-                ),
+                "image_url": sample.image_url,
                 "description": sample.description,
                 "tags_count": (
                     len(json.loads(sample.tags_json)) if sample.tags_json else 0

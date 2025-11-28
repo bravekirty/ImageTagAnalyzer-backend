@@ -2,12 +2,18 @@ import redis
 import json
 from app.config import settings
 
-redis_client = redis.Redis(
-    host=settings.REDIS_HOST,
-    port=settings.REDIS_PORT,
-    password=settings.REDIS_PASSWORD,
-    decode_responses=True,
-)
+
+config = {
+    "host": settings.REDIS_HOST,
+    "port": settings.REDIS_PORT,
+    "decode_responses": True,
+}
+
+if settings.REDIS_PASSWORD:
+    config["password"] = settings.REDIS_PASSWORD
+
+
+redis_client = redis.Redis(**config)
 
 
 def get_cached_data(key):
