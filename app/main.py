@@ -24,7 +24,7 @@ app.include_router(analytics_router)
 app.include_router(images_router)
 app.include_router(sample_router)
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get("/")

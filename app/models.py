@@ -63,7 +63,8 @@ class SampleImage(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String(255), nullable=False)
-    image_url = Column(String(500), nullable=False)
+    image_preview_url = Column(String(500), nullable=False)
+    image_full_url = Column(String(500), nullable=False)
     description = Column(String(300), nullable=True)
     tags_json = Column(Text, nullable=False)
     upload_date = Column(

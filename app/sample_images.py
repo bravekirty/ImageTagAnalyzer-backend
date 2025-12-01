@@ -3,7 +3,8 @@ import json
 SAMPLE_IMAGES = [
     {
         "filename": "strawberry.jpg",
-        "image_url": "/samples/strawberry.jpg",
+        "image_preview_url": "/samples/preview/strawberry.jpg",
+        "image_full_url": "/samples/full/strawberry.jpg",
         "description": "A strawberry hangs from a slender green bough.",
         "tags_json": json.dumps(
             [
@@ -41,7 +42,8 @@ SAMPLE_IMAGES = [
     },
     {
         "filename": "urban.jpg",
-        "image_url": "/samples/urban.jpg",
+        "image_preview_url": "/samples/preview/urban.jpg",
+        "image_full_url": "/samples/full/urban.jpg",
         "description": "Modern city skyline with buildings and streets",
         "tags_json": json.dumps(
             [
@@ -68,7 +70,8 @@ SAMPLE_IMAGES = [
     },
     {
         "filename": "autumn.jpg",
-        "image_url": "/samples/autumn.jpg",
+        "image_preview_url": "/samples/preview/autumn.jpg",
+        "image_full_url": "/samples/full/autumn.jpg",
         "description": "A sun-dappled autumn forest, where trees stand adorned in a tapestry of fiery foliage.",
         "tags_json": json.dumps(
             [

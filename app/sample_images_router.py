@@ -30,7 +30,8 @@ async def get_sample_images():
             {
                 "id": sample.id,
                 "filename": sample.filename,
-                "image_url": sample.image_url,
+                "image_preview_url": sample.image_preview_url,
+                "image_full_url": sample.image_full_url,
                 "description": sample.description,
                 "tags_count": (
                     len(json.loads(sample.tags_json)) if sample.tags_json else 0
